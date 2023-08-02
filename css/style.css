@@ -2299,11 +2299,11 @@ a.article-title:hover {
   filter: alpha(opacity=30);
   width: 200%;
   height: 10px;
-  background-image: -webkit-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: -moz-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: -o-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: -ms-linear-gradient(right, rgba(255,0,0,0.75) 50%, transparent 0%);
-  background-image: linear-gradient(to left, rgba(255,0,0,0.75) 50%, transparent 0%);
+  background-image: -webkit-linear-gradient(right, hsla(282, 100%, 50%, 0.75) 50%, transparent 0%);
+  background-image: -moz-linear-gradient(right, hsla(282, 100%, 50%, 0.75) 50%, transparent 0%);
+  background-image: -o-linear-gradient(right, hsla(282, 100%, 50%, 0.75) 50%, transparent 0%);
+  background-image: -ms-linear-gradient(right, hsla(282, 100%, 50%, 0.75) 50%, transparent 0%);
+  background-image: linear-gradient(to left, hsla(282, 100%, 50%, 0.75) 50%, transparent 0%);
   background-size: 100px 10px;
   background-repeat: repeat-x;
   -webkit-transition: opacity 0.5s;
