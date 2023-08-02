@@ -1,12 +1,26 @@
 :root {
-  --red-0: #f00;
+  
+  /* --red-0: #f00;
   --red-1: #ff5252;
   --red-2: #ff7c7c;
   --red-3: #ffafaf;
   --red-4: #ffd0d0;
   --red-5: #ffe4e4;
   --red-5-5: #ffecec;
-  --red-6: #fff3f3;
+  --red-6: #fff3f3; */
+  /* TODO:color
+  Home,Archives...文字高亮
+  文章标题以及加载进度条
+  ?
+  侧边滚动条 */
+  --red-0: hsl(282, 100%, 50%);
+  --red-1: hsl(282, 100%, 66%);
+  --red-2: hsl(282, 100%, 74%);
+  --red-3: hsl(282, 100%, 84%);
+  --red-4: hsl(282, 100%, 91%);
+  --red-5: hsl(282, 100%, 95%);
+  --red-5-5: hsl(282, 100%, 96%);
+  --red-6: hsl(282, 100%, 98%)
   --color-default-font: #000;
   --color-default: #555;
   --color-grey: #999;
@@ -22,7 +36,8 @@
   --color-wrap: #fff;
   --color-twitter: #00aced;
   --color-facebook: #3b5998;
-  --color-pinterest: #cb2027;
+  /* hsl(358, 73%, 46%) */
+  --color-pinterest: hsl(300, 73%, 46%);
   --color-linkedin: #0077b5;
   --color-dark-twitter: #008abe;
   --color-dark-facebook: #2f477a;
@@ -30,18 +45,28 @@
   --color-dark-linkedin: #005f91;
   --color-meta-shadow: --var(--red-6);
   --color-hover-shadow: rgba(150,150,150,0.1);
-  --color-h2-after: rgba(255,0,0,0.6);
-  --color-h2-after-shadow: rgba(255,78,106,0.7);
+  /* --color-h2-after: rgba(255,0,0,0.6);
+  --color-h2-after-shadow: rgba(255,78,106,0.7); */
+  --color-h2-after: rgba(153, 0, 255, 0.6);
+  --color-h2-after-shadow: rgba(226, 78, 255, 0.7);
 }
 [data-theme="dark"]:root {
-  --red-0: #ff5252;
+  /* --red-0: #ff5252;
   --red-1: #ff5252;
   --red-2: #ff7c7c;
   --red-3: #ffafaf;
   --red-4: #ffd0d0;
   --red-5: #ffe4e4;
   --red-5-5: #ffecec;
-  --red-6: #fff3f3;
+  --red-6: #fff3f3; */
+  --red-0: hsl(282, 100%, 66%);
+  --red-1: hsl(282, 100%, 66%);
+  --red-2: hsl(282, 100%, 74%);
+  --red-3: hsl(282, 100%, 84%);
+  --red-4: hsl(282, 100%, 91%);
+  --red-5: hsl(282, 100%, 95%);
+  --red-5-5: hsl(282, 100%, 96%);
+  --red-6: hsl(282, 100%, 98%);
   --color-default-font: #999;
   --color-default: #999;
   --color-grey: #999;
@@ -57,7 +82,8 @@
   --color-wrap: #272b30;
   --color-twitter: #00aced;
   --color-facebook: #3b5998;
-  --color-pinterest: #cb2027;
+  /* --color-pinterest: #cb2027; */
+  --color-pinterest: hsl(300, 73%, 46%);
   --color-linkedin: #0077b5;
   --color-dark-twitter: #008abe;
   --color-dark-facebook: #2f477a;
@@ -65,8 +91,10 @@
   --color-dark-linkedin: #005f91;
   --color-meta-shadow: rgba(0,0,0,0.3);
   --color-hover-shadow: rgba(0,0,0,0.3);
-  --color-h2-after: #ff5252;
-  --color-h2-after-shadow: rgba(255,78,106,0.7);
+  /* --color-h2-after: #ff5252;
+  --color-h2-after-shadow: rgba(255,78,106,0.7); */
+  --color-h2-after: rgba(153, 0, 255, 0.6);
+  --color-h2-after-shadow: rgba(226, 78, 255, 0.7);
 }
 [data-theme="dark"]:root img {
   filter: brightness(70%);
@@ -1145,7 +1173,7 @@ a.article-title:hover {
   margin: 1.8em 0;
 }
 .article-entry blockquote footer cite:before {
-  content: "�?";
+  content: "�?";
   padding: 0 0.5em;
 }
 .article-entry .pullquote {
