@@ -5,8 +5,7 @@
   background-color: rgba(37,37,37,0.9);
 }
 [data-theme="dark"] #loader .spinner-box .loading-word {
-  /* color: #ff5252; */
-  color: hsl(282, 100%, 66%);
+  color: #cb52ff;
 }
 #loader .loading-left-bg {
   position: fixed;
@@ -43,8 +42,7 @@
 }
 #loader .spinner-box .loading-word {
   position: absolute;
-  /* color: rgba(255,0,0,0.65); */
-  color: hsl(282, 100%, 50%);
+  color: #b300ff;
   top: calc(50% + 100px);
   left: 50%;
   transform: translate(-50%, -50%);
