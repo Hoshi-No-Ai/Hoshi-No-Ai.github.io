@@ -12,7 +12,7 @@
   --color-grey: #999;
   --color-border: var(--red-3);
   --color-link: var(--red-1);
-  --color-dark-link: #ff0f0f;
+  --color-dark-link: #8f00cc;
   --color-background: #eee;
   --color-code-background: #f5f5f5;
   --color-sidebar-text: #777;
@@ -26,7 +26,7 @@
   --color-linkedin: #0077b5;
   --color-dark-twitter: #008abe;
   --color-dark-facebook: #2f477a;
-  --color-dark-pinterest: #a21a1f;
+  --color-dark-pinterest: #8f00cc;
   --color-dark-linkedin: #005f91;
   --color-meta-shadow: --var(--red-6);
   --color-hover-shadow: rgba(150,150,150,0.1);
@@ -47,7 +47,7 @@
   --color-grey: #999;
   --color-border: var(--red-3);
   --color-link: var(--red-1);
-  --color-dark-link: #ff0f0f;
+  --color-dark-link: #8f00cc;
   --color-background: #21252b;
   --color-code-background: #e8e8e8;
   --color-sidebar-text: #777;
@@ -61,7 +61,7 @@
   --color-linkedin: #0077b5;
   --color-dark-twitter: #008abe;
   --color-dark-facebook: #2f477a;
-  --color-dark-pinterest: #a21a1f;
+  --color-dark-pinterest: #8f00cc;
   --color-dark-linkedin: #005f91;
   --color-meta-shadow: rgba(0,0,0,0.3);
   --color-hover-shadow: rgba(0,0,0,0.3);
