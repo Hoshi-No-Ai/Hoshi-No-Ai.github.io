@@ -23,12 +23,12 @@
     
 <link rel="stylesheet" href="/css/loader.css">
 
-    <meta name="description" content="概述  满足运动学约束（Kinematic）和动力学约束（Dynamic） 约束一般要考虑到力的层级（加速度） 机器人有一定的动力学模型，不能当成质点来处理，考虑机器人高阶的约束   从粗到细的优化过程 轨迹只需要局部优化    该模型前轮负责转向，后轮负责驱动 上述公式角速度计算公式有误——应为vLtanϕ{v \over L}tan{\phi}Lv​tanϕ 一些经典的动力学模型  状态栅格">
+    <meta name="description" content="满足动力学约束的路径规划  概述  满足运动学约束（Kinematic）和动力学约束（Dynamic） 约束一般要考虑到力的层级（加速度） 机器人有一定的动力学模型，不能当成质点来处理，考虑机器人高阶的约束   从粗到细的优化过程 轨迹只需要局部优化    该模型前轮负责转向，后轮负责驱动 上述公式角速度计算公式有误——应为vLtanϕ{v \over L}tan{\phi}Lv​tanϕ 一些">
 <meta property="og:type" content="article">
 <meta property="og:title" content="深蓝学院运动规划L4">
 <meta property="og:url" content="http://example.com/2023/09/17/%E6%B7%B1%E8%93%9D%E5%AD%A6%E9%99%A2%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92L4/index.html">
 <meta property="og:site_name" content="アイドル（偶像）">
-<meta property="og:description" content="概述  满足运动学约束（Kinematic）和动力学约束（Dynamic） 约束一般要考虑到力的层级（加速度） 机器人有一定的动力学模型，不能当成质点来处理，考虑机器人高阶的约束   从粗到细的优化过程 轨迹只需要局部优化    该模型前轮负责转向，后轮负责驱动 上述公式角速度计算公式有误——应为vLtanϕ{v \over L}tan{\phi}Lv​tanϕ 一些经典的动力学模型  状态栅格">
+<meta property="og:description" content="满足动力学约束的路径规划  概述  满足运动学约束（Kinematic）和动力学约束（Dynamic） 约束一般要考虑到力的层级（加速度） 机器人有一定的动力学模型，不能当成质点来处理，考虑机器人高阶的约束   从粗到细的优化过程 轨迹只需要局部优化    该模型前轮负责转向，后轮负责驱动 上述公式角速度计算公式有误——应为vLtanϕ{v \over L}tan{\phi}Lv​tanϕ 一些">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://raw.githubusercontent.com/Hoshi-No-Ai/picee/main/Blog/Untitled.xwj2uatcb2g.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Hoshi-No-Ai/picee/main/Blog/Untitled%201.oclixq613e.png">
@@ -67,7 +67,7 @@
 <meta property="og:image" content="https://raw.githubusercontent.com/Hoshi-No-Ai/picee/main/Blog/Untitled%2034.z1u216jjsdb.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/Hoshi-No-Ai/picee/main/Blog/Untitled%2035.f1p8ld475k5.png">
 <meta property="article:published_time" content="2023-09-17T07:58:38.000Z">
-<meta property="article:modified_time" content="2023-09-17T08:16:33.993Z">
+<meta property="article:modified_time" content="2023-09-17T12:33:35.701Z">
 <meta property="article:author" content="星野アイ（星野爱）">
 <meta property="article:tag" content="运动规划">
 <meta property="article:tag" content="深蓝学院">
@@ -2442,7 +2442,8 @@
 
         <div class="e-content article-entry" itemprop="articleBody">
             
-                <h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
+                <h1 id="满足动力学约束的路径规划"><a class="markdownIt-Anchor" href="#满足动力学约束的路径规划"></a> 满足动力学约束的路径规划</h1>
+<h2 id="概述"><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
 <p><img src="https://raw.githubusercontent.com/Hoshi-No-Ai/picee/main/Blog/Untitled.xwj2uatcb2g.png" alt="image" /></p>
 <p>满足运动学约束（Kinematic）和动力学约束（Dynamic）</p>
 <p>约束一般要考虑到力的层级（加速度）</p>
@@ -2625,7 +2626,7 @@
             
         </div>
         <footer class="article-footer">
-            <a data-url="http://example.com/2023/09/17/%E6%B7%B1%E8%93%9D%E5%AD%A6%E9%99%A2%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92L4/" data-id="clmn8p8qq0003887cfjbrdizh" data-title="深蓝学院运动规划L4"
+            <a data-url="http://example.com/2023/09/17/%E6%B7%B1%E8%93%9D%E5%AD%A6%E9%99%A2%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92L4/" data-id="clmng73o4000ptg7c53677b2j" data-title="深蓝学院运动规划L4"
                class="article-share-link">分享</a>
             
             
@@ -2640,12 +2641,28 @@
         
     <nav id="article-nav" class="wow fadeInUp">
         
+            <div class="article-nav-link-wrap article-nav-link-left">
+                
+                    
+                    
+                        <img data-src="/covers/107279319_p1.png" data-sizes="auto" alt="深蓝学院运动规划L5" class="lazyload">
+                    
+                
+                <a href="/2023/09/17/%E6%B7%B1%E8%93%9D%E5%AD%A6%E9%99%A2%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92L5/"></a>
+                <div class="article-nav-caption">前一篇</div>
+                <h3 class="article-nav-title">
+                    
+                        深蓝学院运动规划L5
+                    
+                </h3>
+            </div>
+        
         
             <div class="article-nav-link-wrap article-nav-link-right">
                 
                     
                     
-                        <img data-src="/covers/107213006_p0.png" data-sizes="auto" alt="深蓝学院运动规划L3" class="lazyload">
+                        <img data-src="/covers/107319714_p0.png" data-sizes="auto" alt="深蓝学院运动规划L3" class="lazyload">
                     
                 
                 <a href="/2023/09/10/%E6%B7%B1%E8%93%9D%E5%AD%A6%E9%99%A2%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92L3/"></a>
@@ -2685,7 +2702,7 @@
         <div class="sidebar-state">
             <div class="sidebar-state-article">
                 <div>文章</div>
-                <div class="sidebar-state-number">4</div>
+                <div class="sidebar-state-number">5</div>
             </div>
             <div class="sidebar-state-category">
                 <div>分类</div>
@@ -2798,10 +2815,10 @@
             
                 <div>
                     <span class="icon-brush"></span>
-                    4.9k
+                    7.4k
                     &nbsp;|&nbsp;
                     <span class="icon-coffee"></span>
-                    00:16
+                    00:25
                 </div>
             
             
@@ -2828,7 +2845,7 @@
         <div class="sidebar-state">
             <div class="sidebar-state-article">
                 <div>文章</div>
-                <div class="sidebar-state-number">4</div>
+                <div class="sidebar-state-number">5</div>
             </div>
             <div class="sidebar-state-category">
                 <div>分类</div>
